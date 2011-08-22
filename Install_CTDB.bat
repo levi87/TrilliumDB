@@ -32,7 +32,7 @@ echo ##          ##    ##     ## ##     ##
 echo ##          ##    ##     ## ########  
 echo ##          ##    ##     ## ##     ## 
 echo ##    ##    ##    ##     ## ##     ## 
-echo  ######     ##    ########  ########   rev 1.1.0
+echo  ######     ##    ########  ########   rev 1.2.0
 echo.
 echo Cataclysm Emulation Project: 
 echo http://www.arkania.net
