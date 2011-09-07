@@ -26,13 +26,13 @@ echo ##     ## ########  #####    ##     ## ## ## ##  ##  ##     ##
 echo ######### ##   ##   ##  ##   ######### ##  ####  ##  ######### 
 echo ##     ## ##    ##  ##   ##  ##     ## ##   ###  ##  ##     ## 
 echo ##     ## ##     ## ##    ## ##     ## ##    ## #### ##     ##  2009-2011
-echo  ######  ######## ########  ########  
-echo ##    ##    ##    ##     ## ##     ## 
-echo ##          ##    ##     ## ##     ## 
-echo ##          ##    ##     ## ########  
-echo ##          ##    ##     ## ##     ## 
-echo ##    ##    ##    ##     ## ##     ## 
-echo  ######     ##    ########  ########   rev 1.2.0
+echo #######                                        ######  ######  
+echo    #    #####  # #      #      # #    # #    # #     # #     # 
+echo    #    #    # # #      #      # #    # ##  ## #     # #     # 
+echo    #    #    # # #      #      # #    # # ## # #     # ######  
+echo    #    #####  # #      #      # #    # #    # #     # #     # 
+echo    #    #   #  # #      #      # #    # #    # #     # #     # 
+echo    #    #    # # ###### ###### #  ####  #    # ######  ######  1.4.0
 echo.
 echo Cataclysm Emulation Project: 
 echo http://www.arkania.net
@@ -83,7 +83,7 @@ echo #                          #
 echo ############################
 
 
-for %%i in (%dbpath%\*.sql) do if %%i neq Databases\clean_install\character.sql if %%i neq Databases\clean_install\auth.sql echo %%i & %mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %wdb% < %%i
+for %%i in (%dbpath%\*.sql) do if %%i neq Databases\clean_install\characters.sql if %%i neq Databases\clean_install\auth.sql echo %%i & %mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %wdb% < %%i
 
 
 
@@ -105,7 +105,7 @@ echo # Dont close this Windows       #
 echo #                               #
 echo #################################
 
-%mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %cdb% < Databases\clean_install\character.sql
+%mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %cdb% < Databases\clean_install\characters.sql
 
 :realm
 echo.
